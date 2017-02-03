@@ -1,0 +1,239 @@
+body{
+	    font-family: "Helvetica Neue", Helvetica, "PingFang SC", 微软雅黑, Tahoma, Arial, sans-serif;
+}
+.cem-logo-icon{
+	background-repeat: no-repeat;
+	background-image: url("../img/logo-pc.svg");
+	width: 80px;
+	height: 56px;
+}
+
+.logo-pc-div{
+	background-color: rgba(59,190,122,.9);
+	height: 80px;
+	width: 130px;
+}
+
+.cem-applogo-icon{
+	background-repeat: no-repeat;
+	background-image: url("../img/logo.svg");
+	background-size: contain;
+	height: 33px;
+	width: 33px;
+}
+
+@media (min-width: 768px){
+	.pc-none{
+		display: none;
+	}
+}
+
+@media (max-width: 767px){
+	.app-none{
+		display: none;
+	}
+}
+
+/*重写bootstrap css*/
+
+/*navbar*/
+.navbar-default .navbar-toggle{
+    border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: #3bbe7a;
+    height: 1px;
+    width: 24px;
+    transition: all .4s ease-in-out;
+}
+
+.navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 6px;
+}
+
+.navbar-brand{
+	padding-top: 8px;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:not(.collapsed) .icon-bar+.icon-bar{
+	margin-top: 0px;
+}
+
+.navbar-default .navbar-toggle:not(.collapsed) .cem-icon-bar1{
+	transform: rotate(45deg) translateX(1px) translateY(1px);
+}
+.navbar-default .navbar-toggle:not(.collapsed) .cem-icon-bar2{
+	opacity: 0;
+}
+.navbar-default .navbar-toggle:not(.collapsed) .cem-icon-bar3{
+	transform: rotate(-45deg);
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+	background-color: #e7e7e7;
+}
+
+.navbar.navbar-default{
+	margin-bottom: 0px;
+}
+
+
+/*carousel*/
+.carousel-indicators li{
+	height: 1px;
+	border-radius: 0px;
+}
+
+.carousel-indicators .active{
+	margin: 1px;
+	height: 1px;
+	border-color: #3bbe7a;
+}
+
+
+
+/*layui*/
+.layui-msg{
+	position: absolute;
+	top: 45%;
+	width: 100%;
+	z-index: 19999;
+}
+.layui-layer{
+	animation: layui-bounceIn .3s;
+	background: rgba(0,0,0,0.6);
+    color: #fff;
+    width: 100px;
+    border-radius: 2px;
+	margin: 0 auto;
+}
+
+
+.layui-layer-content{
+	text-align: center;
+    padding: 12px 15px;
+    font-size: 14px;
+}
+
+@keyframes layui-bounceIn{
+	0% { opacity: 0; transform: scale(.5);}
+	100% { opacity: 1; transform: scale(1);}
+}
+
+.login_mask{
+	position: fixed;
+    background: rgba(0,0,0, 0.8);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9989;
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+.login_mask.show{
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+}
+
+.login_panel{
+	z-index: 9999;
+	background: #fff;
+	width: 4.6rem;
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
+	padding: 0 .3rem;
+	transform: translateX(-100%);
+	transition: transform .5s ease-in-out;
+}
+
+.login_panel.show{
+	transform: none;
+}
+
+.m_cnt{
+	margin-top: 0.5rem;
+}
+
+.input-group-addon{
+	top: 0;
+}
+
+.warning_label{
+	color: #f33;
+}
+
+.lfloat{
+	float: left;
+}
+
+.rfloat{
+	float: right;
+}
+
+.loginbox{
+	margin: 10px 0px;
+}
+
+.list-item{
+	padding: .2rem 0;
+    margin: 0 .3rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.m_article_title{
+    color: black;
+    font-size: 16px;
+    margin-bottom: .24rem;
+}
+
+.m_article_img{
+	height: 1.4rem;
+    width: 27%;
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+        margin-right: 8px;
+}
+
+.m_article_img img{
+	width: 100%;
+    min-height: 1.4rem;
+}
+
+.m_article_info{
+	overflow: hidden;
+}
+
+.m_article_desc_l{
+	float: left;
+}
+
+.m_article_desc_r{
+	float: right;
+}
+
+.m_article_chanel{
+	border: 1px solid #f33;
+    border-radius: 2px;
+    color: #f33;
+}
+
+.m_article_time{
+	color: #888;
+}
+
+.m_article_desc_r{
+	color: #888;
+}
