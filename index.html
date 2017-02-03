@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 50px;">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/cem.css">
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse">
+					<span class="sr-only">切换导航</span>
+					<span class="icon-bar cem-icon-bar1"></span>
+					<span class="icon-bar cem-icon-bar2"></span>
+					<span class="icon-bar cem-icon-bar3"></span>
+				</button>
+				<a href="#" class="navbar-brand">
+					<figure class="cem-applogo-icon pc-none"></figure>
+					<div class="logo-pc-div app-none">
+						<figure class="cem-logo-icon"></figure>
+					</div>
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="example-navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">首页</a></li>
+					<li><a href="#">产品</a></li>
+					<li><a href="#">合作</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="carousel slide" data-ride="carousel" style="margin-top: 51px;">
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img src="img/app/health-banner1-2x-small.jpg" alt="first slide">
+			</div>
+			<div class="item">
+				<img src="img/app/health-banner2-2x-small.jpg" alt="second slide">
+			</div>
+		</div>
+	</div>
+	
+	<div id="content-list">
+		<section class="list-item">
+			<a href="http://3g.163.com/touch/live.html?channel=all&offset=1&roomid=113982">
+				<div class="m_article_img">
+					<img src="http://cms-bucket.nosdn.127.net/0bd8907c42614639a651c97c183f453320170120093407.jpeg?imageView&thumbnail=220y165&quality=45&type=webp&interlace=1&enlarge=1" alt="">
+				</div>
+				<div class="m_article_info">
+					<div class="m_article_title">
+						<span>国家统计局：2016年全年GDP比上年增长6.7%</span>
+					</div>
+					<div class="m_article_desc">
+						<div class="m_article_desc_l">
+							<span class="m_article_chanel">推荐</span>
+							<span class="m_article_time">1小时前</span>
+						</div>
+						<div class="m_article_desc_r">
+							<span class="infofont glyphicon glyphicon-book"></span>
+							<span>60万</span>
+						</div>
+					</div>
+				</div>
+			</a>
+		</section>
+
+		<section class="list-item">
+			<a href="http://3g.163.com/touch/article.html?channel=all&offset=5&docid=CB7E3QA20001899O">
+				<div class="m_article_img">
+					<img src="http://cms-bucket.nosdn.127.net/714adad20d134eb4ac194834417e524120170120100326.png?imageView&thumbnail=220y165&quality=45&type=webp&interlace=1&enlarge=1" alt="">
+				</div>
+				<div class="m_article_info">
+					<div class="m_article_title">
+						<span>2016年全年GDP同比增长6.7% 四季度增长6.8%</span>
+					</div>
+					<div class="m_article_desc">
+						<div class="m_article_desc_l">
+							<span class="m_article_chanel">财经</span>
+							<span class="m_article_time">47分钟前</span>
+						</div>
+						<div class="m_article_desc_r">
+							<span class="infofont glyphicon glyphicon-book"></span>
+							<span>1813</span>
+						</div>
+					</div>
+				</div>
+			</a>
+		</section>
+	</div>
+	<!--login page -->
+	<div class="login_mask" id="login_mask">
+	</div>
+
+	<div class="login_panel" id="login_panel">
+		<div class="m_cnt">
+			<div class="logined" style="display: none;">
+				
+			</div>
+			
+			<div class="not_logined">
+				<div class="form-group">
+					<div class="input-group" id="account-box">
+						<span class="input-group-addon glyphicon glyphicon-user"></span>
+						<input type="text" class="form-control" placeholder="用户名">
+						<span class="u_tip"><span class="u_clear"></span></span>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="input-group" id="password-box">
+						<span class="input-group-addon glyphicon glyphicon-lock"></span>
+						<input type="password" class="form-control" placeholder="密码">
+						<span class="u_tip"><span class="u_clear"></span></span>
+					</div>
+				</div>
+				
+				<button class="btn btn-primary btn-block" type="button" id="loginBtn">登&nbsp;&nbsp;录</button>
+
+				<div class="loginbox">
+					<div class="reg lfloat">立即注册</div>
+					<div class="fgtpwd warning_label rfloat">忘记密码</div>
+				</div>
+			</div>			
+		</div>
+	</div>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/main.js"></script>
+</body>
+</html>
